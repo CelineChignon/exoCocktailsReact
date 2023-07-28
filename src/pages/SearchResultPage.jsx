@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react"
 import { useSearchParams } from "react-router-dom";
+import Footer from "../component/Footer";
+import Header from "../component/Header";
 const SearchResultPage = () => {
 
     const [searchCocktail, setSearchCocktail] = useState([])
@@ -19,7 +21,7 @@ const SearchResultPage = () => {
     const search = searchParams.get("search");
     return (
         <>
-
+            <Header />
             <h2>Resultat de votre recherche:</h2>
             <div>
                 {searchCocktail ? (
@@ -31,6 +33,7 @@ const SearchResultPage = () => {
                     <p>Aucun cocktail ne porte ce nom</p>
                 )}
             </div>
+            <Footer />
         </>
     )
 }

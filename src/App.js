@@ -3,7 +3,7 @@ import HomePage from "./pages/HomePage";
 import ListAllCocktailsPage from "./pages/ListAllCocktailsPage";
 import RandomCocktailPage from "./pages/RandomCocktailPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import SearchResultPage from "./SearchResultPage";
+import SearchResultPage from "./pages/SearchResultPage";
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/random" element={<RandomCocktailPage />} />
           <Route path="/cocktails" element={<ListAllCocktailsPage />} />
-          <Route path="/search-result" element={<SearchResultPage />} />
+          <Route path="/search-results" element={<SearchResultPage />} />
         </Routes>
       </BrowserRouter>
     </div>
