@@ -36,9 +36,18 @@
     
 }
 
-.navBarre li{
-    padding: 0% 10%;
+.liNavBar{
+    margin: 0% 10%;
     color: black;
+}
+.liNavBar:hover{
+  background-color: aqua;
+  padding: 20% 20%;
+  
+}
+
+.navBarre li{
+  padding: 0% 10%;
 }
 
 h1{
