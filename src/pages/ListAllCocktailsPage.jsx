@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import Header from "../component/Header"
 import Footer from "../component/Footer";
+import { Link } from "react-router-dom";
 
 const ListAllCocktailsPage
     = () => {
@@ -27,13 +28,8 @@ const ListAllCocktailsPage
                     <div className="containerCocktails" key={cocktails.idDrink}>
                         <h3>{cocktails.strDrink}</h3>
                         <div className="containerImgCocktail"><img src={cocktails.strDrinkThumb} alt="Photo cocktail" /></div>
-                        <p>Liste des ingredients: </p>
-                        <ul>
-                            <li>{cocktails.strIngredient1}</li>
-                            <li>{cocktails.strIngredient2}</li>
-                            <li>{cocktails.strIngredient3}</li>
-                            <li>{cocktails.strIngredient4}</li>
-                        </ul>
+                        <Link to={"/cocktails/show/" + cocktails.idDrink}>Voir le cocktail</Link>
+// j'utilise Link pour effectuer rediriger vers le cocktail choisi qui se trouve sur la page ShowCocktailPage
 
                     </div>
                 ))}

@@ -3,7 +3,7 @@ const Header = () => {
     const navigate = useNavigate();
 
     //handleSubmitSearch Est une variable que j'utilise pour récuperer l'event du formulaire recherche, 
-    //Navigate est une variable qui me sert a appeler la fonction useNavigate qui permet de naviger entre plusieurs page, c'est à dire une fois l'utilisateur fait sa recherche ça nous renvoie vers la page searchResultPage
+    //Navigate est une variable qui me sert a appeler la fonction useNavigate qui permet de naviger entre plusieurs pages, c'est à dire une fois l'utilisateur fait sa recherche ça nous renvoie vers la page searchResultPage
     const handleSubmitSearch = (event) => {
         event.preventDefault();
         const search = event.target.search.value
